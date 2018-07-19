@@ -85,7 +85,7 @@ a, a:hover, a:active, a:focus {
 }
 #showcase .bg-image {
   position: fixed;
-  background: #333 url("shirts2.jpg");
+  background: #333 url("/images/shirts2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
