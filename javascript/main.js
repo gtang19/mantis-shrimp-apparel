@@ -3,7 +3,7 @@ $(function() {
   $("#menu").click(function() {
       $('.slidenav').toggle("slide");
   });
-  $('.testcontent, #close').click(function(){
+  $('header, main, footer, #close').click(function(){
     $('.slidenav').hide("slide");
   })
 })
