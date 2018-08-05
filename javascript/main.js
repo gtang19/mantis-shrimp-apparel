@@ -1,8 +1,13 @@
 /******Jquery******/
-$(".btn1").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#dummy").offset().top
-    }, 700);
-});
+$(function() {
+  $("#menu").click(function() {
+      $('.slidenav').toggle("slide");
+  });
+  $('.testcontent, #close').click(function(){
+    $('.slidenav').hide("slide");
+  })
+})
+
+
 
 /******Vanilla JavaScript******/
