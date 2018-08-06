@@ -12,7 +12,6 @@ body {
   text-align: center;
   background-color: #322D30;
   color: #fff;
-
     /* font-family: 'Oxygen', sans-serif; */
 
     font-family: 'Questrial', sans-serif;
@@ -41,7 +40,7 @@ img {
   color: #17181A;
   padding: 14px 16px;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .btn-blue:hover {
   background-color: #2988F2;
@@ -53,7 +52,10 @@ img {
   color: #17181A;
   padding: 14px 16px;
   border-radius: 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.btn-pink:hover {
+  background-color: #F8188A;
 }
 
 
@@ -114,58 +116,6 @@ nav.slidenav a:hover {
   background-color: #201C1E;
 }
 
-/* showcase */
-
-
-#showcase {
-  min-height: 350px;
-}
-#showcase .bg-image {
-  position: absolute;
-  background: #242628 url("/images/shirts2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 350px;
-  z-index: -1;
-  opacity: 0.25;
-}
-#showcase h1 {
-  padding-top: 25px;
-  padding-bottom: 0;
-}
-
-#showcase .content-wrap, .content-section .content-wrap {
-  padding: 0 1.5em;
-}
-
-.content-section {
-  padding: 1em 0 2em 0;
-  background-color: #eaeaea;
-  color: #17181A;
-}
-
-.card {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  background-color: #eaeaea;
-  color: #17181A;
-  text-align: center;
-  margin: 20px 10px;
-}
-
-.card-header {
-  font-size: 20px;
-}
-.card-content {
-  padding-bottom: 1.5em;
-}
-
-
-.toshop .btn-blue {
-  margin: 20px;
-  width: 200px;
-}
 
 footer {
   background-color: #011123;
@@ -178,7 +128,7 @@ footer {
   nav.navbar {
     grid-template-columns: 300px .5fr repeat(2, minmax(100px,1fr)) 3fr  repeat(2, minmax(100px,1fr)) minmax(50px, 100px);
   }
-  nav.slidenav {display: none;}
+  nav.slidenav {display: block;}
   nav.navbar #home.mobile {display: none;} nav.navbar #homedesktop.desktop {display: inline-block; grid-area: 1/1/1/2; font-family: 'Julius Sans One', sans-serif; font-weight: bold;}
   nav.navbar #menu {display: none;}
   nav.navbar #men {grid-area: 1/3/1/4;}
@@ -205,22 +155,6 @@ footer {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
-  }
-  .content-wrap {
-    grid-column: 2/4;
-  }
-
-  #showcase h1 {
-    padding-top: 75px;
-  }
-
-  .card-container {
-    display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto,15em)) 1fr;
   }
 
 }
