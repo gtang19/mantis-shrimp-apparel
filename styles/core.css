@@ -119,7 +119,12 @@ nav.slidenav a:hover {
 
 footer {
   background-color: #011123;
-  min-height: 25vh;
+  min-height: 10vh;
+}
+
+footer img {
+  margin-top: 5vh;
+  width: 70%;
 }
 
 
@@ -155,6 +160,16 @@ footer {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto,20em) 1fr;
+  }
+
+  footer img {
+    grid-column-start: 2;
+    width: 100%;
+    margin-top: 10px;
   }
 
 }
