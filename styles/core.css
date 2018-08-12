@@ -33,6 +33,16 @@ img {
   width: 100%;
 }
 
+.secondary {
+  color: #242628;
+  font-size: 16px;
+}
+
+.subtext {
+  color: #5D6064;
+  font-size: 14px;
+}
+
 .btn-blue {
   display: inline-block;
   text-decoration: none;
@@ -41,6 +51,8 @@ img {
   padding: 14px 16px;
   border-radius: 15px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: none;
+  cursor: pointer;
 }
 .btn-blue:hover {
   background-color: #2988F2;
@@ -53,6 +65,8 @@ img {
   padding: 14px 16px;
   border-radius: 15px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border: none;
+  cursor: pointer;
 }
 .btn-pink:hover {
   background-color: #F8188A;

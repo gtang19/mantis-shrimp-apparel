@@ -6,7 +6,12 @@
 }
 .item-info {
   text-align: left;
-  padding: 20px
+  padding: 20px;
+}
+
+.subtext {
+  padding: 0;
+  margin-top: 10px;
 }
 
 /* Checkbox styling */
@@ -31,7 +36,7 @@
   top: 15px;
   text-align: center;
   color: #242628;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .check-container input {
@@ -60,16 +65,22 @@
 #purple-check .checkmark {border-color: #5D2371;}
 #pink-check .checkmark {border-color: #F2A1B6;}
 
-.check-container:hover input ~ .checkmark {
-  background-color: #82868A;
+
+@media only screen and (min-width: 768px) {
+  .check-container:hover input ~ .checkmark {
+    background-color: #82868A5f;
+  }
+  #red-check:hover input ~ .checkmark {background-color: #AD1B535f;}
+  #orange-check:hover input ~ .checkmark {background-color: #FF78005f;}
+  #yellow-check:hover input ~ .checkmark {background-color: #F3FC3F5f;}
+  #green-check:hover input ~ .checkmark {background-color: #32C45B5f;}
+  #blue-check:hover input ~ .checkmark {background-color: #18AFDB5f;}
+  #purple-check:hover input ~ .checkmark {background-color: #5D23715f;}
+  #pink-check:hover input ~ .checkmark {background-color: #F2A1B65f;}
+  }
 }
-#red-check:hover input ~ .checkmark {background-color: #AD1B535f;}
-#orange-check:hover input ~ .checkmark {background-color: #FF78005f;}
-#yellow-check:hover input ~ .checkmark {background-color: #F3FC3F5f;}
-#green-check:hover input ~ .checkmark {background-color: #32C45B5f;}
-#blue-check:hover input ~ .checkmark {background-color: #18AFDB5f;}
-#purple-check:hover input ~ .checkmark {background-color: #5D23715f;}
-#pink-check:hover input ~ .checkmark {background-color: #F2A1B65f;}
+
+
 
 .check-container input:checked ~ .checkmark {
   background-color: #011123;
@@ -83,12 +94,16 @@
 #pink-check input:checked ~ .checkmark {background-color: #F2A1B6;}
 
 
-
+.complexity {
+  margin-top: 10px;
+}
 .complexity h3, .complexity p {padding: 3px 0;}
 
 #explanation {
-  color: #242628;
-  font-size: 14px;
+
+}
+textarea {
+  width: 80%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -103,9 +118,12 @@
     grid-column-start: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
   }
   .item-image {
     margin: 20px;
     padding-top: 30px;
   }
-}
+  img {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }

@@ -21,6 +21,16 @@
         <p class="item-price">$10.00</p>
         <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minus!</p>
         <div class="item-buy">
+          <h2>Customize & Buy</h2>
+          <div class="size">
+            <h3>Size</h3>
+            <select id="item-size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="xl">XL</option>
+            </select>
+          </div>
           <div class="color">
             <h3>Color(s)</h3>
             <label class="check-container" id="red-check">
@@ -58,6 +68,7 @@
               <span class="checkmark"></span>
               <p>Pink</p>
             </label>
+            <p class="subtext">Colors may blend slightly during dying, e.g. picking red and blue may result in some purple.</p>
 
           </div>
           <div class="complexity">
@@ -68,20 +79,20 @@
               <option value="normal">Normal</option>
               <option value="chaotic">Chaotic</option>
             </select>
-            <p id="explanation">Colors blended together smoothly</p>
+            <p id="explanation" class="secondary">Colors blended together smoothly</p>
           </div>
           <div class="other">
             <h3>Anything else?</h3>
             <textarea name="other" id="" cols="40" rows="5"></textarea>
           </div>
 
+          <button class="placeholder btn-pink">Add to cart</button>
+
         </div>
-
       </div>
-
-    </div>
     </div>
   </main>
+  <footer></footer>
 
   <script src="/javascript/jquery-3.3.1.js"></script>
   <script src="/javascript/navbar.js"></script>
