@@ -21,3 +21,21 @@ function check(){
       break;
   }
 }
+
+
+$(function() {
+  $(".snip-input").change(function(){
+    n = $(this).attr('data-custom-val')
+    var data = "item-custom"+n+"-value";
+    var item_val = $(this).val();
+    $('#buy-button').data(data,item_val);
+  });
+
+  $(".check-container").change(function(){
+    var n = $(this).attr('data-custom-val');
+    var data = "item-custom"+n+"-value";
+    var $input = $(this).children().first();
+    var isChecked = $input.is(":checked");
+    $('#buy-button').data(data, isChecked);
+  });
+});

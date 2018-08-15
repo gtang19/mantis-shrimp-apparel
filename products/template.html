@@ -5,6 +5,7 @@
   <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="NzViNWQwNmEtOWViNi00MjViLTlkNWQtOTE3ODk5MzIzOWRmNjM2NjY1MzY3MDkwNDM3OTQz"></script>
   <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -29,46 +30,46 @@
           <h2>Customize & Buy</h2>
           <div class="size">
             <h3>Size</h3>
-            <select id="item-size">
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-              <option value="xl">XL</option>
+            <select class="snip-input" id="item-size" data-custom-val=1>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>XL</option>
             </select>
           </div>
           <div class="color">
             <h3>Color(s)</h3>
-            <label class="check-container" id="red-check">
+            <label class="check-container" id="red-check" data-custom-val=2>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Red</p>
             </label>
-            <label class="check-container" id="orange-check">
+            <label class="check-container" id="orange-check" data-custom-val=3>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Orange</p>
             </label>
-            <label class="check-container" id="yellow-check">
+            <label class="check-container" id="yellow-check" data-custom-val=4>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Yellow</p>
             </label>
-            <label class="check-container" id="green-check">
+            <label class="check-container" id="green-check" data-custom-val=5>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Green</p>
             </label>
-            <label class="check-container" id="blue-check">
+            <label class="check-container" id="blue-check" data-custom-val=6>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Blue</p>
             </label>
-            <label class="check-container" id="purple-check">
+            <label class="check-container" id="purple-check" data-custom-val=7>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Purple</p>
             </label>
-            <label class="check-container" id="pink-check">
+            <label class="check-container" id="pink-check" data-custom-val=8>
               <input type="checkbox">
               <span class="checkmark"></span>
               <p>Pink</p>
@@ -79,26 +80,50 @@
           <div class="complexity">
             <h3>Complexity</h3>
             <p>How crazy do you want the design to be?</p>
-            <select id="item-complexity">
-              <option value="calm">Calm</option>
-              <option value="normal">Normal</option>
-              <option value="chaotic">Chaotic</option>
+            <select id="item-complexity" class="snip-input" data-custom-val=9>
+              <option >Calm</option>
+              <option >Normal</option>
+              <option >Chaotic</option>
             </select>
             <p id="explanation" class="secondary">Colors blended together smoothly</p>
           </div>
           <div class="other">
             <h3>Anything else?</h3>
-            <textarea name="other" id="" cols="40" rows="5"></textarea>
+            <textarea class="snip-input" id="item-instructions" data-custom-val=10 name="other" id="" cols="40" rows="5"></textarea>
           </div>
 
-          <button
+<!-- Snipcart buy button -->
+
+          <button id="buy-button"
             class="snipcart-add-item btn-pink"
             data-item-id="test"
             data-item-name="Unisex Tee"
             data-item-price="10.00"
             data-item-weight="5"
             data-item-url="https://mantisshrimpapparel.com/products/template.html"
-            data-item-description="A unisex tee">Add to cart
+            data-item-description="A unisex tee"
+
+            data-item-custom1-name="Size"
+            data-item-custom1-options="Small|Medium|Large|XL"
+            data-item-custom2-name="Red"
+            data-item-custom2-options="true|false"
+            data-item-custom3-name="Orange"
+            data-item-custom3-options="true|false"
+            data-item-custom4-name="Yellow"
+            data-item-custom4-options="true|false"
+            data-item-custom5-name="Green"
+            data-item-custom5-options="true|false"
+            data-item-custom6-name="Blue"
+            data-item-custom6-options="true|false"
+            data-item-custom7-name="Purple"
+            data-item-custom7-options="true|false"
+            data-item-custom8-name="Pink"
+            data-item-custom8-options="true|false"
+            data-item-custom9-name="Complexity"
+            data-item-custom9-options="Calm|Normal|Chaotic"
+            data-item-custom10-name="Special Instructions"
+          >
+            Add to cart
           </button>
 
         </div>
