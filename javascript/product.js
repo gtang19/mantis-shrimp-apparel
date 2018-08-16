@@ -38,4 +38,15 @@ $(function() {
     var isChecked = $input.is(":checked");
     $('#buy-button').data(data, isChecked);
   });
+
+  //Price change for selection
+  $("#item-style").change(function(){
+    var $selected = $("#item-style option:selected")
+    var $unselected = $("#item-style option:not(option:selected)");
+    var price = $selected.attr('data-price');
+    var price_string = "$"+price+".00"
+    var price_dif = $unselected.attr('data-price') - price;
+    var price_dif_string;
+    $(".item-price").html(price_string);
+  });
 });

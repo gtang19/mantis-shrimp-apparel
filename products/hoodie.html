@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/javascript/jquery-3.3.1.js"></script>
+  <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="NzViNWQwNmEtOWViNi00MjViLTlkNWQtOTE3ODk5MzIzOWRmNjM2NjY1MzY3MDkwNDM3OTQz"></script>
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Chivo|Julius+Sans+One|Oxygen|Questrial|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/core.css">
+  <link rel="stylesheet" href="/styles/product.css">
+
+  <title>Hoodie</title>
+</head>
+<body>
+  <div class="navbar-placeholder"></div>
+  <main class="grid">
+    <div class="container card">
+      <div class="item-image">
+        <img src="/images/shirts1.jpg" alt="">
+      </div>
+      <div class="item-info">
+        <h1 class="item-name">Hoodie</h1>
+        <p class="item-price">$35.00</p>
+        <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minus!</p>
+        <div class="item-buy">
+          <h2>Customize & Buy</h2>
+          <div class="size">
+            <h3>Size & Style</h3>
+            <select class="snip-input" id="item-size" data-custom-val=1>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>XL</option>
+            </select>
+            <select id="item-style" class="snip-input" data-custom-val=0>
+              <option data-price=35 value="Pullover">Pullover</option>
+              <option data-price=40 value="Zip-up">Zip-up[+$5.00]</option>
+            </select>
+          </div>
+          <div class="color">
+            <h3>Color(s)</h3>
+            <label class="check-container" id="red-check" data-custom-val=2>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Red</p>
+            </label>
+            <label class="check-container" id="orange-check" data-custom-val=3>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Orange</p>
+            </label>
+            <label class="check-container" id="yellow-check" data-custom-val=4>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Yellow</p>
+            </label>
+            <label class="check-container" id="green-check" data-custom-val=5>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Green</p>
+            </label>
+            <label class="check-container" id="blue-check" data-custom-val=6>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Blue</p>
+            </label>
+            <label class="check-container" id="purple-check" data-custom-val=7>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Purple</p>
+            </label>
+            <label class="check-container" id="pink-check" data-custom-val=8>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <p>Pink</p>
+            </label>
+            <p class="subtext">Colors may blend slightly during dying, e.g. picking red and blue may result in some purple.</p>
+
+          </div>
+          <div class="complexity">
+            <h3>Complexity</h3>
+            <p>How crazy do you want the design to be?</p>
+            <select id="item-complexity" class="snip-input" data-custom-val=9>
+              <option >Calm</option>
+              <option >Normal</option>
+              <option >Chaotic</option>
+            </select>
+            <p id="explanation" class="secondary">Colors blended together smoothly</p>
+          </div>
+          <div class="other">
+            <h3>Anything else?</h3>
+            <textarea class="snip-input" id="item-instructions" data-custom-val=10 name="other" id="" cols="40" rows="5"></textarea>
+          </div>
+
+<!-- Snipcart buy button -->
+
+          <button id="buy-button"
+            class="snipcart-add-item btn-pink"
+            data-item-id="U2"
+            data-item-name="Hoodie"
+            data-item-price="35.00"
+            data-item-weight="5"
+            data-item-url="https://mantisshrimpapparel.com/products/template.html"
+
+            data-item-custom0-name="Style"
+            data-item-custom0-options="Pullover|Zip-up[+5.00]"
+            data-item-custom1-name="Size"
+            data-item-custom1-options="Small|Medium|Large|XL"
+            data-item-custom2-name="Red"
+            data-item-custom2-options="true|false"
+            data-item-custom3-name="Orange"
+            data-item-custom3-options="true|false"
+            data-item-custom4-name="Yellow"
+            data-item-custom4-options="true|false"
+            data-item-custom5-name="Green"
+            data-item-custom5-options="true|false"
+            data-item-custom6-name="Blue"
+            data-item-custom6-options="true|false"
+            data-item-custom7-name="Purple"
+            data-item-custom7-options="true|false"
+            data-item-custom8-name="Pink"
+            data-item-custom8-options="true|false"
+            data-item-custom9-name="Complexity"
+            data-item-custom9-options="Calm|Normal|Chaotic"
+            data-item-custom10-name="Special Instructions"
+
+          >
+            Add to cart
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+  <script src="/javascript/navbar.js"></script>
+  <script src="/javascript/product.js"></script>
+</body>
+</html>
