@@ -116,7 +116,7 @@ textarea {
   .grid {
     margin-top: 1em;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr minmax(auto,60em) 1fr;
     grid-gap: 1em;
 
   }
