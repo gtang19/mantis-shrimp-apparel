@@ -20,6 +20,7 @@ body {
   opacity: 0.25;
 }
 #showcase h1 {
+  font-size: 40px;
   padding-top: 25px;
   padding-bottom: 0;
 }
@@ -76,8 +77,12 @@ footer {
   }
 
   .card-container {
-    display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto,15em)) 1fr;
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 1fr repeat(4, minmax(auto,15em)) 1fr; */
+  }
+  .card {
+    width: 250px;
   }
 
 }

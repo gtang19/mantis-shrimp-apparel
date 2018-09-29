@@ -20,26 +20,31 @@
   <main class="grid">
     <div class="container card">
       <div class="item-image">
-        <img src="/images/shirts1.jpg" alt="">
+        <img src="/images/placeholder.jpg" alt="Some shirts">
+        <img src="/images/placeholder.jpg" alt="More shirt">
+      </div>
+      <div class="image-popup">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="modalImg">
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
       </div>
       <div class="item-info">
         <h1 class="item-name">Hoodie</h1>
         <p class="item-price">$35.00</p>
-        <p class="item-description">9.7-oz fleece will keep you warm in most weather. Extremely roomy front pocket is connected in the pullover model, and seperated in the zip up model</p>
+        <p class="item-description">9.7-oz fleece will keep you warm in most weather. Features roomy pouch style front pocket.</p>
         <p class="item-description warning">There is currently a shortage of zip-up model hoodies. You may experience some delay.</p>
         <div class="item-buy">
           <h2>Customize & Buy</h2>
           <div class="size">
-            <h3>Size & Style</h3>
+            <h3>Size</h3>
             <select class="snip-input" id="item-size" data-custom-val=1>
               <option>Small</option>
               <option>Medium</option>
               <option>Large</option>
               <option>XL</option>
-            </select>
-            <select id="item-style" class="snip-input" data-custom-val=0>
-              <option data-price=35 value="Pullover">Pullover</option>
-              <option data-price=40 value="Zip-up">Zip-up[+$5.00]</option>
             </select>
           </div>
           <div class="color">
@@ -107,8 +112,6 @@
             data-item-weight="5"
             data-item-url="https://mantisshrimpapparel.com/products/hoodie.html"
 
-            data-item-custom0-name="Style"
-            data-item-custom0-options="Pullover|Zip-up[+5.00]"
             data-item-custom1-name="Size"
             data-item-custom1-options="Small|Medium|Large|XL"
             data-item-custom2-name="Red"
