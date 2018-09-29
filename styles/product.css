@@ -25,7 +25,8 @@ Image slider styling
 */
 .item-image {
   position: relative;
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: auto auto;
   width: auto;
 }
 .item-image img {
