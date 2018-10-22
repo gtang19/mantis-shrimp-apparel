@@ -31,16 +31,13 @@ var captionText = document.getElementById("caption");
 close.addEventListener("click", function(){
   popup.setAttribute('style',"display: none;")
 });
-for (i in images) {
-    images[i].addEventListener("click", function(){
+images.forEach(image => {
+  image.addEventListener("click", function(){
     popup.setAttribute('style',"display: block;")
     modalImg.src = this.src;
     caption.innerHTML = this.alt;
   });
-
-};
-
-
+});
 
 $(function() {
   $(".snip-input").change(function(){
